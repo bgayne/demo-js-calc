@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
+body {
+	background-color: #2F4F4F;
+}
+
+.calc-container {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+
+}
+
+.calc-body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 450px;
+	background-color: #A0522D;
+	border-radius: 20px;
+	border: solid #BBB 2px;
+	border-bottom-color: #999;
+	border-bottom-width: 6px;
+	box-shadow: 15px 35px 65px rgba(0,0,0,.9);
+
+
+}
+
+/* relative-positioned container so we can do absolute positioning
+ * with internal elements */
+
+.calc-inner-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.calc-title {
+	width: 80%;
+	height: 1.5em;
+	position: absolute;
+	left: 50%;
+	top: 2.5%;
+	transform: translate(-50%, -2.5%);
+	text-align: center;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #DCDCDC;
+	color: #2F4F4F;
+	border: solid black 1px;
+	border-top: none;
+	border-bottom: solid black 2px;
+	font-family: 'Orbitron', sans-serif;
+	padding-top: .125em;
+	box-shadow: 2px 2px 20px rgba(50,50,50,.2);
+}
+
+.calc-screen {
+	position: absolute;
+	width: 90%;
+	height: 25%;
+	background-color: #FFFFE0;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -5%);
+	border-radius: 5px;
+	border: solid #2F4F4F 2px;
+	border-top: solid #2F4F4F 3px;
+	border-bottom: solid #3F5F5F 2px;
+	box-shadow: inset 5px 5px 20px rgba(50,50,50,.2);
+}
+
+.calc-screen-text-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-overflow: ellipsis;
+
+}
+
+.calc-screen-text {
+	position: absolute;
+	right: 10px;
+	display: block;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.calc-screen-text h1 {
+	float: right;
+}
+.calc-screen-text h4 {
+	float: right;
+}
+
+.buttons-container {
+	position: absolute;
+	height: 60%;
+	width: 90%;
+	top: 100%;
+	left: 40%;
+	transform: translate(-40%, -100%);
+	font-family: 'Orbitron', sans-serif;
+	color: white;
+	padding-top: 1%;
+}
+
+.calc-button-row-full {
+	width: 100%;
+	height: 25%;
+	display: relative;
+	display: inline-flex;
+	margin-left: 2.5%;
+	margin-bottom: -1%;
+
+}
+
+button:focus {
+	outline: 0;
+}
+
+.calc-button {
+	width: 17%;
+	margin: 1%;
+	margin-right: 5px;
+	height: 75%;
+	display: inline-block;
+	background-color: #8B4513;
+	border-radius: 10px;
+	border-bottom: solid 4px gray;
+
+
+}
+
+.calc-button-zero {
+	width: 36.5%;
+}
+
+.calc-button-equals {
+	width: 17%;
+	margin: 1%;
+	height: 170%;
+	display: inline-block;
+	background-color: #8B4513;
+	border-radius: 10px;
+}
